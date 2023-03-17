@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador</title>
+</head>
+<body>
+    <b><h2>SIMULADOR FINANCEIRO</h2></b>
+
+    <p><i>De acordo com o <b>O GLOBO</b>, cerca de 1/3 de toda a produção de peixes é
+        desperdiçada durante o transporte e manuseio. </i></p> <br>
+
+     <span><i>Calcule a porcentagem de desperdício com base no peso (em kg) que foi transportado.</i></span> <br>
+
+     <br>
+     <br>Peso: <input type="number" id="input_peso">
+     <button onclick="Calcular()"><b><i>Calcular:</i></b></button>
+     <div id="div_mensagem"></div>
+
+    
+</body>
+</html>
+<script>
+function Calcular(){
+
+        var peso = Number(input_peso.value);
+        var txperda = peso * 0.33;
+        var prejuizo = (txperda * 42)
+
+
+        div_mensagem.innerHTML = `<br><i>Você terá um desperdício de <b>${txperda}KG </b> e um prejuizo de aproximadamente <b>${prejuizo}
+            </b> com base no preço médio (R$42,00 por Kg) com auxilio da nossa solução, é possível evitar cerca de 50% desse valor.  </i>`
+}
+
+
+
+</script>
